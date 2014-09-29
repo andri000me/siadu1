@@ -1,0 +1,325 @@
+Sep 26, 2013 : urut_dn: uid:0
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:3
+Sep 26, 2013 : urut_tukar: u1:0, u2:0
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='0' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='0' WHERE replid='3'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:3
+Sep 26, 2013 : urut_tukar: u1:2, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_dn: uid:0
+Sep 26, 2013 : urut_dn: uid:0
+Sep 26, 2013 : urut_up: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:3
+Sep 26, 2013 : urut_tukar: u1:3, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='3'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:3
+Sep 26, 2013 : urut_tukar: u1:2, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_up: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:3, id2:2
+Sep 26, 2013 : urut_tukar: u1:2, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='3'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_up: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:3, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='2'
+Sep 26, 2013 : urut_up: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:3
+Sep 26, 2013 : urut_tukar: u1:2, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_up: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:3
+Sep 26, 2013 : urut_tukar: u1:3, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='3'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:3
+Sep 26, 2013 : urut_tukar: u1:2, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_up: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:3
+Sep 26, 2013 : urut_tukar: u1:3, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='3'
+Sep 26, 2013 : urut_up: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:2, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:3
+Sep 26, 2013 : urut_tukar: u1:2, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_up: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:3, id2:1
+Sep 26, 2013 : urut_tukar: u1:2, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='3'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:3, id2:1
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:3
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='3'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:3, id2:1
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:3, id2:2
+Sep 26, 2013 : urut_tukar: u1:2, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='3'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:0, id2:1
+Sep 26, 2013 : urut_tukar: u1:0, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='0'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='0' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:0, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='0' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:0, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='0' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:3
+Sep 26, 2013 : urut_tukar: u1:2, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_up: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:3
+Sep 26, 2013 : urut_tukar: u1:3, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='3'
+Sep 26, 2013 : urut_up: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:2, u2:0
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='0' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_up: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:2, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_up: uid:5
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:6, id2:5
+Sep 26, 2013 : urut_tukar: u1:6, u2:5
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='6'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='6' WHERE replid='5'
+Sep 26, 2013 : urut_up: uid:4
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:6, id2:4
+Sep 26, 2013 : urut_tukar: u1:5, u2:4
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='4' WHERE replid='6'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='4'
+Sep 26, 2013 : urut_up: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:6, id2:3
+Sep 26, 2013 : urut_tukar: u1:4, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='6'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='4' WHERE replid='3'
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:6, id2:3
+Sep 26, 2013 : urut_tukar: u1:3, u2:4
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='4' WHERE replid='6'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='3'
+Sep 26, 2013 : urut_dn: uid:4
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:6, id2:4
+Sep 26, 2013 : urut_tukar: u1:4, u2:5
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='6'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='4' WHERE replid='4'
+Sep 26, 2013 : urut_dn: uid:5
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:6, id2:5
+Sep 26, 2013 : urut_tukar: u1:5, u2:6
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='6' WHERE replid='6'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='5'
+Sep 26, 2013 : urut_up: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:2, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_up: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:2, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:1
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:2, id2:1
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_dn: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:1, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='2'
+Sep 26, 2013 : urut_dn: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:3
+Sep 26, 2013 : urut_tukar: u1:2, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='3'
+Sep 26, 2013 : urut_dn: uid:4
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:4
+Sep 26, 2013 : urut_tukar: u1:3, u2:4
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='4' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='4'
+Sep 26, 2013 : urut_dn: uid:5
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:5
+Sep 26, 2013 : urut_tukar: u1:4, u2:5
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='4' WHERE replid='5'
+Sep 26, 2013 : urut_up: uid:5
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:5
+Sep 26, 2013 : urut_tukar: u1:5, u2:4
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='4' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='5'
+Sep 26, 2013 : urut_up: uid:4
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:4
+Sep 26, 2013 : urut_tukar: u1:4, u2:3
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='4' WHERE replid='4'
+Sep 26, 2013 : urut_up: uid:3
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:3
+Sep 26, 2013 : urut_tukar: u1:3, u2:2
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='3' WHERE replid='3'
+Sep 26, 2013 : urut_up: uid:2
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:1, id2:2
+Sep 26, 2013 : urut_tukar: u1:2, u2:1
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='1' WHERE replid='1'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='2' WHERE replid='2'
+Sep 26, 2013 : urut_up: uid:5
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:6, id2:5
+Sep 26, 2013 : urut_tukar: u1:6, u2:5
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='6'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='6' WHERE replid='5'
+Sep 26, 2013 : urut_dn: uid:5
+Sep 26, 2013 : urut_tukar: a:aka_grup, id1:6, id2:5
+Sep 26, 2013 : urut_tukar: u1:5, u2:6
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='6' WHERE replid='6'
+Sep 26, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='5'
+Okt 1, 2013 : asdasdasdasd
+Okt 1, 2013 : data:
+Okt 1, 2013 : data:23
+Okt 1, 2013 : data:
+Okt 1, 2013 : data:22
+Okt 5, 2013 : urut_up: uid:5
+Okt 5, 2013 : urut_tukar: a:aka_grup, id1:6, id2:5
+Okt 5, 2013 : urut_tukar: u1:6, u2:5
+Okt 5, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='6'
+Okt 5, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='6' WHERE replid='5'
+Okt 5, 2013 : urut_dn: uid:5
+Okt 5, 2013 : urut_tukar: a:aka_grup, id1:6, id2:5
+Okt 5, 2013 : urut_tukar: u1:5, u2:6
+Okt 5, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='6' WHERE replid='6'
+Okt 5, 2013 : urut_seturut: UPDATE `aka_grup` SET urut='5' WHERE replid='5'
+Okt 5, 2013 : INSERT INTO aka_siswa_kelas SET kelas='1',siswa='1'
+Okt 5, 2013 : INSERT INTO aka_siswa_kelas SET kelas='1',siswa='3'
+Okt 5, 2013 : INSERT INTO aka_siswa_kelas SET kelas='1',siswa='2'
+Okt 5, 2013 : INSERT INTO aka_siswa_kelas SET kelas='2',siswa='3'
+Okt 5, 2013 : INSERT INTO aka_siswa_kelas SET kelas='1',siswa='2'
+Okt 7, 2013 : INSERT INTO aka_siswa_kelas SET kelas='',siswa='3'
+Okt 7, 2013 : INSERT INTO aka_siswa_grup SET grup='1',siswa='3'
+Okt 7, 2013 : INSERT INTO aka_siswa_grup SET grup='1',siswa='2'
+Okt 7, 2013 : INSERT INTO aka_siswa_grup SET grup='1',siswa='3'
+Okt 7, 2013 : INSERT INTO aka_siswa_grup SET grup='1',siswa='2'
+Okt 7, 2013 : INSERT INTO aka_siswa_kelas SET kelas='1',siswa='3'
+Okt 7, 2013 : urut_dn: uid:2
+Okt 7, 2013 : urut_tukar: a:aka_nilai, id1:1, id2:2
+Okt 7, 2013 : urut_tukar: u1:1, u2:2
+Okt 7, 2013 : urut_seturut: UPDATE `aka_nilai` SET urut='2' WHERE replid='1'
+Okt 7, 2013 : urut_seturut: UPDATE `aka_nilai` SET urut='1' WHERE replid='2'
+Okt 7, 2013 : urut_up: uid:2
+Okt 7, 2013 : urut_tukar: a:aka_nilai, id1:1, id2:2
+Okt 7, 2013 : urut_tukar: u1:2, u2:1
+Okt 7, 2013 : urut_seturut: UPDATE `aka_nilai` SET urut='1' WHERE replid='1'
+Okt 7, 2013 : urut_seturut: UPDATE `aka_nilai` SET urut='2' WHERE replid='2'
+Okt 13, 2013 : salin:
+Okt 13, 2013 : salin:
+Okt 13, 2013 : salin:1
+Okt 15, 2013 : salin:
+Okt 15, 2013 : salin:1
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswa.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswakelas.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswakelompok.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswaguru.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/presensi.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswa.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswa.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswakelas.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswakelompok.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/siswaguru.php
+Nov 3, 2013 : E:/localhost/sites/www/new/akademik/system/views/presensi.php

@@ -1,0 +1,16 @@
+TRUNCATE TABLE  `keu_jenispenerimaan`;
+TRUNCATE TABLE  `keu_jenispenerimaanlain`;
+TRUNCATE TABLE  `keu_jenispengeluaranlain`;
+TRUNCATE TABLE  `keu_jurnal`;
+TRUNCATE TABLE  `keu_jurnaldetil`;
+TRUNCATE TABLE  `keu_nominaljtt`;
+TRUNCATE TABLE  `keu_nominaljttcalon`;
+TRUNCATE TABLE  `keu_penerimaanjtt`;
+TRUNCATE TABLE  `keu_penerimaanjttcalon`;
+TRUNCATE TABLE  `keu_penerimaanlain`;
+TRUNCATE TABLE  `keu_penerimaanskr`;
+TRUNCATE TABLE  `keu_penerimaanskrcalon`;
+TRUNCATE TABLE  `keu_pengeluaranlain`;
+TRUNCATE TABLE  `keu_pspendaftaran`;
+TRUNCATE TABLE  `keu_psuangpangkal`;
+TRUNCATE TABLE  `keu_tpo`;
