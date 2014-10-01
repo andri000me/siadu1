@@ -1,1 +1,3 @@
-<?php header('location:index/'); //tes Nambah Kode?>
+<?php 
+// tes bos
+header('location:index/'); //tes Nambah Kode?>
