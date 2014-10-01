@@ -73,7 +73,7 @@ var HomeTitle="<?=$APP_HOMETITLE?>"; var pagetitle=new Array();
 				Ukuran maksimum sebuah file yang dapat diterima adalah 5MB.
 				</div>
 				<div class="sfont" style="margin-bottom:6px;margin-top:10px"><b>Ketentuan layanan:</b></div>
-				<div class="psf12155">Penyedia layanan ini adalah <b>Johan Kharisma</b> yang kemudian disebut sebagai <b>Penyedia layanan</b> atau johankharisma.com.<br/>
+				<div class="psf12155">Penyedia layanan ini adalah <b>Elyon School</b> yang kemudian disebut sebagai <b>Penyedia layanan</b> atau johankharisma.com.<br/>
 				Pengguna layanan adalah pengguna aplikasi yang terdaftar sebagai admin maupun anggota grup dalam aplikasi ini.<br/>
 				Penyedia layanan menyediakan antar muka bagi pengguna layanan untuk melakukan upload file dan membagi file tersebut kepada anggota grup.<br/>
 				Penyedia layanan tidak bertanggung jawab atas kontent yang diupload oleh pengguna layanan.<br/>
@@ -100,7 +100,7 @@ var HomeTitle="<?=$APP_HOMETITLE?>"; var pagetitle=new Array();
 </div>
 </div>
 </div>
-<div id="copyright">Copyright &copy; Johan Kharisma - All right reserved &nbsp;&nbsp;&nbsp;</div>
+<div id="copyright">Copyright &copy; Elyon School - All right reserved &nbsp;&nbsp;&nbsp;</div>
 <?php require_once(MODDIR.'fform.php'); ?>
 <?php require_once(MODDIR.'fform2.php'); ?>
 <div id="pagepreview">

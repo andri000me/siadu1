@@ -71,10 +71,10 @@ $APP_PAGES=Array(
 			//app_page('jampelajaran','Jam Pelajaran','Mendata pegawai yang menjadi guru mata pelajaran',$APP_COLOR_THEME1[3],'clock.png'),
 			//app_page('jadwal','Jadwal Pelajaran','Menyusun jadwal pelajaran.',$APP_COLOR_THEME1[3],'cal.png')
 			//app_page('rpp','Rencana Program Pembelajaran','Penyusunan rencana program pembelajaran (RPP)',$APP_COLOR_THEME1[1],'puzzle.png'),
-			//app_page('aspekpenilaian','Aspek Penilaian','Mendata aspek penilaian yang digunakan untuk membantu melakukan penilaian',$APP_COLOR_THEME1[$th++],'pencek.png'),
-			//app_page('jenispengujian','Jenis-jenis Pengujian','Mendata jenis-jenis pengujian setiap pelajaran',$APP_COLOR_THEME1[$th++],'pencir.png')
-			//app_page('grading','Aturan Grading Nilai Rapor Siswa','Grading merupakan huruf mutu yang ditentukan berdasarkan range nilai',$APP_COLOR_THEME1[4],'grade.png'),
-			//app_page('perhitungannilai','Aturan Perhitungan Nilai Rapor Siswa','Menyusun aturan perhitungan nilai rapor',$APP_COLOR_THEME1[5],'penbook.png')
+			app_page('aspekpenilaian','Aspek Penilaian','Mendata aspek penilaian yang digunakan untuk membantu melakukan penilaian',$APP_COLOR_THEME1[$th++],'pencek.png'),
+			// app_page('jenispengujian','Jenis-jenis Pengujian','Mendata jenis-jenis pengujian setiap pelajaran',$APP_COLOR_THEME1[$th++],'pencir.png')
+			// app_page('grading','Aturan Grading Nilai Rapor Siswa','Grading merupakan huruf mutu yang ditentukan berdasarkan range nilai',$APP_COLOR_THEME1[4],'grade.png'),
+			// app_page('perhitungannilai','Aturan Perhitungan Nilai Rapor Siswa','Menyusun aturan perhitungan nilai rapor',$APP_COLOR_THEME1[5],'penbook.png')
 			app_page('alumni','Pendataan Alumni','Mendata alumni.',$APP_COLOR_THEME1[2],'userp.png'),
 			app_page('mutasi','Pendataan Mutasi Siswa','Mendata siswa yang meninggalkan sekolah.',$APP_COLOR_THEME1[4],'userp.png'),
 			//app_page('pelajaran','Pelajaran','Mendata pelajaran yang diajarkan di sekolah.',$APP_COLOR_THEME1[3],'book.png'),
