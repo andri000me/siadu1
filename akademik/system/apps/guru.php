@@ -47,7 +47,7 @@ if($opt=='a'||$opt=='u'||$opt=='d'){ $q=false;
 
 		//$fform->fl('Departemen',departemen_name($r['departemen']));
 		//$fform->fl('Tahun ajaran',tahunajaran_name($r['tahunajaran']));
-		$fform->fi('Mata Pelajaran',iSelect('pelajaran',pelajaran_opt(gpost('tahunajaran')),$r['pelajaran']));
+		$fform->fi('Mata Pelajaran aa',iSelect('pelajaran',pelajaran_opt(gpost('tahunajaran')),$r['pelajaran']));
 		$fform->fi('Pegawai',app_form_getpegawai('pegawai',$r));
 		//$fform->fi('Status',iSelect('aktif',array('1'=>'Aktif','0'=>'Tidak aktif'),$r['aktif']));
 		//$fform->fa('Kode',iText('kode',$r['kode'],'width:40px'));

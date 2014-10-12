@@ -52,7 +52,7 @@ $xtable->btnbar_f('add');
 if($xtable->ndata>0){
 	// Table head
 	if($pel==0){
-		$xtable->head('Mata pelajaran','Nama Guru','NIP','Keterangan');
+		$xtable->head('Mata pelajaran','Nama Guru aa','NIP','Keterangan');
 	} else {
 		$xtable->head('Nama Guru','NIP','Keterangan');
 	}
