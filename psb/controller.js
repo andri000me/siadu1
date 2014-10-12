@@ -68,21 +68,30 @@ function pendataan_getSumPokok(){
 		EHide("loader3");
 	});
 }
+
 function pendataan_cdiscount(){
-	var sum1=ufRp(E("sumpokok").value);
-	var disc1=ufRp(E("disctb").value);
-	var disc2=ufRp(E("discsaudara").value);
-	//var disc3=ufRp(E("disctunai").value);
-	var disc3=parseInt(E("disctunai").value);
-	disc3=disc3*sum1/100;
-	//E("disctunai_nom").value=fRp(disc3);
+	var sum1    =ufRp(E("sumpokok").value);
+	var disc1   =ufRp(E("disctb").value);
+	var disc2   =ufRp(E("discsaudara").value);
+	var disc3   =parseInt(E("disctunai").value);
+		disc3 	=disc3*sum1/100;
 	var disc=disc1+disc2+disc3;
-	E("disctotal").value=fRp(disc.toString());
+	E("disctotal").value  =fRp(disc.toString());
 }
+ 
+function pendataan_disctunairp(){
+	var sp  = parseInt(ufRp(E("sumpokok").value));
+	var dt1 = parseInt(E("disctunai").value);
+	var dt2 = sp*dt1/100; 
+	E("disctunai2").value=fRp(dt2.toString());
+	// $("#disctunai2").value=fRp(dt2.toString());
+	// alert(dt2);
+}
+
 function pendataan_csumnet(){
-	var sum1=ufRp(E("sumpokok").value);
-	var disc=ufRp(E("disctotal").value);
-	var sumn=sum1-disc;
+	var sum1 =ufRp(E("sumpokok").value);
+	var disc =ufRp(E("disctotal").value);
+	var sumn =sum1-disc;
 	E("sumnet").value=fRp(sumn.toString());
 }
 function pendataan_cangsuran(){
@@ -95,7 +104,9 @@ function pendataan_cangsuran(){
 	}
 	E("angsuran").value=fRp(anpb.toString());
 }
+// function pendataan_
 function pendataan_countnet(){
+	pendataan_disctunairp();
 	pendataan_cdiscount();
 	pendataan_csumnet();
 	pendataan_cangsuran();

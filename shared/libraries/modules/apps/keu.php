@@ -19,14 +19,6 @@ function jt_name($a){
 	else return '';
 }
 
-function jt_jenisbukti($a){
-	if($a==JT_INCOME) return 'BKM';
-	else if($a==JT_OUTCOME) return 'BKK';
-	else if($a==JT_INBANK) return 'BBM';
-	else if($a==JT_OUTBANK) return 'BBK';
-	else return '';
-}
-
 define('RT_SPP',1);
 define('RT_PSB',2);
 define('RT_USP',3);
@@ -57,11 +49,6 @@ function tahunbuku_getaktif(){
 function tahunbuku_getaktifid(){
 	$a=tahunbuku_getaktif();
 	return $a['replid'];
-}
-
-function tahunbuku_getsaldoawal(){
-	$r=tahunbuku_getaktif();
-	return $r['saldoawal'];
 }
 
 function transaksi_lastct(){

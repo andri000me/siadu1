@@ -45,7 +45,6 @@ if(isset($_POST[$n])){return $_POST[$n];}else{return gets($n,$a);}
 function getsx($n){
 if(isset($_GET[$n])){return $_GET[$n];}else{return gpost($n);}
 }
-//require_once(SHAREDDIR.'request/xmlhttprequest.php');
 
 // Miscellanous Functions
 function color_level($l,$k=0){
@@ -187,6 +186,7 @@ function admin_get(){
 		$a['dept']=intval($_SESSION[ASID.'admin_dept']);
 		$a['pegawai']=intval($_SESSION[ASID.'admin_pegawai']);
 		$a['bahasa']=$_SESSION[ASID.'admin_bahasa'];
+		$a['app']=$_SESSION[ASID.'admin_app'];
 	} else {
 		$a['id']=0;
 		$a['nama']='';
@@ -195,6 +195,7 @@ function admin_get(){
 		$a['dept']=0;
 		$a['pegawai']=0;
 		$a['bahasa']='';
+		$a['app']='';
 	}
 	return $a;
 }
@@ -205,6 +206,10 @@ function admin_getLang(){
 function admin_getID(){
 	$a=admin_get();
 	return $a['id'];
+}
+function admin_getApp(){
+	$a=admin_get();
+	return $a['app'];
 }
 function admin_isadministrator(){
 	$ADMIN=admin_get();
@@ -223,17 +228,17 @@ function admin_is_alldept(){
 }
 // Common data:
 function agama_r($a=1){
-	$res=Array(); if($a==0)$res[0]='agama:';
-	$t=mysql_query("SELECT * FROM mst_agama ORDER BY urutan");
+	$res=Array(); if($a!=1)$res[0]='';
+	$t=mysql_query("SELECT * FROM mst_agama ORDER BY nama");
 	while($r=mysql_fetch_array($t)){
-		$res[$r['replid']]=$r['agama'];
+		$res[$r['replid']]=$r['nama'];
 	}
 	return $res;
 }
 function agama_name($a){
 	if(is_array($a))$b=$a['agama'];
 	else $b=$a;
-	return dbFetch("agama","mst_agama","W/replid='$b'");
+	return dbFetch("nama","mst_agama","W/replid='$b'");
 }
 function goldarah_r(){
 	return Array('-'=>'-','O'=>'O','A'=>'A','B'=>'B','AB'=>'AB');
@@ -390,6 +395,26 @@ function app_page_getindex($key){
 	}
 	return 0;
 }
+function app_sidemenu(){
+	global $APP_PAGES;
+	$menuid=gpost('set');
+	$pagekey=gpost('page');
+	
+	$n=count($APP_PAGES);
+	for($i=0;$i<$n;$i++){
+		echo '<div style="margin:6px;font:15px '.SFONT.';color:#444;cursor:default">'.$APP_PAGES[$i]['tileset']['title'].'</div>';
+		$pages=$APP_PAGES[$i]['pages'];
+		$n1=count($pages);
+		echo '<div class="blueblock"><ul>';
+		for($l=0;$l<$n1;$l++){
+			$act=str_replace('std','openPage('.$i.',\''.$pages[$l]['key'].'\',false)',$pages[$l]['action']);
+			if($pages[$l]['key']==$pagekey) $sc='class="active"';
+			else $sc='';
+			echo '<li><a '.($pages[$l]['desc']==''?'':'title="'.$pages[$l]['desc'].'"').' '.$sc.' href="#&'.$pages[$l]['key'].'" onclick="'.$act.'">'.$pages[$l]['title'].'</a></li>';
+		}
+		echo '</ul></div>';
+	}
+}
 function app_menu(){
 	global $APP_PAGES;
 	$menuid=gpost('set');
@@ -412,7 +437,8 @@ function app_checkuser(){
 	$t=mysql_query("SELECT * FROM admin WHERE uname='$uname' AND passwd='$passwd'");
 	if(mysql_num_rows($t)==1){
 		$r=mysql_fetch_array($t);
-		if($r['app']==APID || $r['level']==1){
+		$app=APID=='gur'?'aka':APID;
+		if($app==APID || $r['level']==1){
 		$_SESSION[ASID.'admin_id']=$r['replid'];
 		$_SESSION[ASID.'admin_name']=$r['nama'];
 		$_SESSION[ASID.'admin_uname']=$r['uname'];
@@ -420,6 +446,7 @@ function app_checkuser(){
 		$_SESSION[ASID.'admin_dept']=$r['departemen'];
 		$_SESSION[ASID.'admin_pegawai']=$r['pegawai'];
 		$_SESSION[ASID.'admin_bahasa']=$r['bahasa'];
+		$_SESSION[ASID.'admin_app']=$r['app'];
 		dbUpdate("admin",Array('tlogin'=>date("Y-m-d H:i:s")),"replid='".$r['replid']."'");
 		echo $r['nama'];
 		} else {

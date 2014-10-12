@@ -36,15 +36,15 @@ $xform->table_begin();
 		$xform->fi('',iText('judul2',$a[1],$xform->fieldws));
 		
 		$s=iText('klasifikasi-kode',$data['klasifikasi-kode'],'float:left;margin-right:4px;width:60px','','','onkeyup="katalog_klasifikasi_set()"');
-		$s.=iSelect('klasifikasi',$klasifikasi,$data['klasifikasi'],'float:left;margin-right:4px;width:180px','katalog_klasifikasi_sel();katalog_getcallnumber()','onclick="katalog_getcallnumber()"');
+		$s.=iSelect('klasifikasi',$klasifikasi,$data['klasifikasi'],'float:left;margin-right:4px;width:180px','katalog_klasifikasi_sel()');
 		$s.='<button title="Klasifikasi baru..." class="btn" style="float:left;margin-right:4px" onclick="katalog_klasifikasi_form(\'af\')"><div class="bi_addb">&nbsp;</div></button>';
 		$xform->fi('Klasifikasi',$s);
 		
-		$s=iSelect('pengarang',$pengarang,$data['pengarang'],'float:left;margin-right:4px;width:244px','katalog_getcallnumber()','onclick="katalog_getcallnumber()"');
+		$s=iSelect('pengarang',$pengarang,$data['pengarang'],'float:left;margin-right:4px;width:244px');
 		$s.='<button title="Pengarang baru..." class="btn" style="float:left;margin-right:4px" onclick="katalog_pengarang_form(\'af\')"><div class="bi_addb">&nbsp;</div></button>';
 		$xform->fi('Pengarang',$s);
 		
-		$xform->fi('Callnumber',iText('callnumber',$data['callnumber'],$xform->fieldws,'','onfocus="katalog_getcallnumber()"'));
+		$xform->fi('Callnumber',iText('callnumber',$data['callnumber'],$xform->fieldws,''));
 		
 		$xform->fi('Penerjemah',iText('penerjemah',$data['penerjemah'],$xform->fieldws));
 		$xform->fi('Editor',iText('editor',$data['editor'],$xform->fieldws));

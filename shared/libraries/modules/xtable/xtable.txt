@@ -520,7 +520,7 @@ class xtable{
 		if($this->cari==0){
 		echo '<div class="infobox2" style="margin-top:10px">Belum ada data '.$this->format_word($this->idata).($c==''?'':' '.$c).'.';
 		if(admin_isoperator()){
-			//echo ' Silahkan <a class="linkb" href="javascript:" onclick="'.$this->act_add.'"> '.($b==''?'menambah data':$b).' '.strtolower($this->idata).'</a>.';
+			echo ' Silahkan <a class="linkb" href="javascript:" onclick="'.$this->act_add.'"> '.($b==''?'menambah data':$b).' '.strtolower($this->idata).'</a>.';
 		}
 		echo '</div>';
 		}

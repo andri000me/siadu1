@@ -41,7 +41,7 @@ function ruang_name($a){
 function ruang_warn($a=0,$f=''){
 	if(!admin_isoperator()) $a=1;
 	if($a==0){
-		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data ruang pada departemen ini.';
+		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data ruang pada departemen ini.<br/>Silahkan <a class="linkb" href="#&ruang" onclick="PCBCODE=106;openPage('.app_page_getindex('ruang').',\'ruang\',false,\'departemen=\'+E(\'departemen\').value)">membuat data ruang</a> pada menu Referensi.</div>';
 	}
 	else if($a==1){
 		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data ruang pada departemen ini.<br/>Silahkan menghubungi bagian akademik untuk membuat data ruang baru.</div>';
@@ -135,7 +135,7 @@ function grupsiswa_name($a){
 function grupsiswa_warn($a=0,$f=''){
 	if(!admin_isoperator()) $a=1;
 	if($a==0){
-		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data kelompok siswa pada tahu ajaran ini.';
+		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data kelompok siswa pada tahu ajaran ini.<br/>Silahkan <a class="linkb" href="#&kelompok" onclick="PCBCODE=101;openPage('.app_page_getindex('kelompok').',\'kelompok\',false,gpage_purl([\'departemen\',\'departemen\']))">membuat data kelompok siswa</a> pada menu Referensi.</div>';
 	}
 	else if($a==1){
 		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data kelompok siswa.<br/>Silahkan menghubungi bagian akademik untuk membuat data kelompok siswa baru.</div>';

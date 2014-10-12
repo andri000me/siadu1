@@ -9,6 +9,8 @@ $lok=gpost('lokasi');
 $lokasi=lokasi_r($lok,1);
 $jen=gpost('jenisbuku');
 $jenisbuku=jenisbuku_r($jen,1);
+$tingb=gpost('tingkatbuku');
+$tingkatbuku=tingkatbuku_r($tingb,1);
 
 // Query
 $xtable->search_keyon('barkode=>pus_buku.barkode:EQ-0',
@@ -20,12 +22,14 @@ $xtable->search_keyon('barkode=>pus_buku.barkode:EQ-0',
 				'penerbit(nama penerbit)=>pus_penerbit.nama-6');
 
 $db=new xdb('pus_buku');
-$db->field('pus_buku:replid,katalog,lokasi,barkode,idbuku,status','pus_katalog:judul,klasifikasi,callnumber,pengarang,penerbit','pus_klasifikasi:kode as n1,kode','pus_pengarang:nama as n2','pus_penerbit:nama as n3');
+$db->field('pus_buku:replid,katalog,tingkatbuku,lokasi,barkode,idbuku,status','pus_katalog:judul,klasifikasi,callnumber,pengarang,penerbit','pus_klasifikasi:kode as n1,kode','pus_pengarang:nama as n2','pus_penerbit:nama as n3');
 $db->join('katalog','pus_katalog');
+$db->join('tingkatbuku','pus_tingkatbuku');
 $db->joinother('pus_katalog','klasifikasi','pus_klasifikasi');
 $db->joinother('pus_katalog','pengarang','pus_pengarang');
 $db->joinother('pus_katalog','penerbit','pus_penerbit');
 $db->where($lok==0?"":"pus_buku.lokasi='$lok'");
+$db->where($ting==0?"":"pus_buku.tingkatbuku='$ting'");
 $db->where_and($jen==0?"":"pus_katalog.jenisbuku='$jen'");
 $db->where_and($xtable->search_sql_get());
 
@@ -41,21 +45,35 @@ $PSBar->begin();
 	} else {
 		$PSBar->end();
 		hiddenval('lokasi',$lok);
-		hiddenval('jenisbuku',$jenb);
+		hiddenval('jenisbuku',$jen);
+		hiddenval('tingkatbuku',$tingb);
 		lokasi_warn();
 		$PSBar->pass=false;
 	}
-	
+
 	if($PSBar->pass){
 	if(count($jenisbuku)>0){
 		$PSBar->selection('Jenis koleksi',iSelect('jenisbuku',$jenisbuku,$jen,$PSBar->selws,$fmod."_get()"));
 	} else {
 		$PSBar->end();
 		hiddenval('jenisbuku',$jenb);
+		hiddenval('tingkatbuku',$tingb);
 		jenisbuku_warn();
 		$PSBar->pass=false;
 	}}
+
+	if($PSBar->pass){
+	if(count($tingkatbuku)>0){
+		$PSBar->selection('Tingkat koleksi',iSelect('tingkatbuku',$tingkatbuku,$ting,$PSBar->selws,$fmod."_get()"));
+	} else {
+		$PSBar->end();
+		hiddenval('tingkatbuku',$tingb);
+		tingkatbuku_warn();
+		$PSBar->pass=false;
+	}}
+
 $PSBar->end();
+
 
 if($PSBar->pass){
 

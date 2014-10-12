@@ -58,6 +58,7 @@ function siswa_db_bytahunajaran($ta=0,$f=""){
 	return $db;
 }
 
+
 function siswa_db_byID($id=0,$f=""){
 	$db=new xdb("aka_siswa_kelas");
 	$db->field("aka_siswa:replid,nis,nama".($f==""?"":",".$f),"aka_kelas:replid as idkelas,kelas as nkelas","departemen:nama as ndepartemen","aka_angkatan.angkatan as nangkatan");
@@ -69,22 +70,6 @@ function siswa_db_byID($id=0,$f=""){
 	$db->joinother("aka_tahunajaran","departemen","departemen");
 	$db->where("aka_siswa.replid='$id'");
 	return $db;
-}
-
-function siswa_mutasi_id($ta=0){
-	$db=new xdb("aka_mutasi");
-	$db->field("aka_mutasi:replid,siswa as idsiswa,tanggal,keterangan","aka_jenismutasi.nama as njenis","aka_siswa:nisn,nama","departemen:nama as ndepartemen","aka_angkatan:angkatan as nangkatan");
-	$db->join("siswa","aka_siswa");
-	$db->join("jenismutasi","aka_jenismutasi");
-	$db->joinother("aka_siswa","angkatan","aka_angkatan");
-	$db->joinother("aka_angkatan","departemen","departemen");
-	$db->where("aka_angkatan.departemen='$ta'");
-	return $db;
-	/*
-	$t=$db->query();
-	$xtable->ndata_db($t);
-	$t=$db->query($xtable->pageorder_sql('aka_mutasi.tanggal','aka_siswa:nisn,nama','aka_jenismutasi.nama'));
-	*/
 }
 
 function siswa_absen($id=0,$tgl='0000-00-00'){

@@ -15,7 +15,8 @@ if($opt=='a'||$opt=='u'||$opt=='d'){ $q=false;
 		if($nunit>1){
 			for($i=0;$i<$nunit;$i++){
 				$l=barang_lbarkode();
-				$inp['kode']=lokasi_kode($inp['lokasi']).'.'.grup_kode($inp['grup']).'.'.katalog_kode($inp['katalog']).'.';
+				// $inp['kode']=lokasi_kode($inp['lokasi']).'/'.grup_kode($inp['grup']).'/'.katalog_kode($inp['katalog']).'/';
+				$inp['kode']=grup_kode($inp['grup']).'/'.katalog_kode($inp['katalog']).'/';
 				$inp['kode'].=sprintf("%05d",$l);
 				$inp['barkode']=sprintf("%05d",$l);
 				$inp['urut']=$l;
@@ -41,7 +42,7 @@ if($opt=='a'||$opt=='u'||$opt=='d'){ $q=false;
 	} else {
 		$r=array();
 		$r['sumber']=0;
-		$r['kode']=lokasi_kode($inp['lokasi']).'.'.grup_kode($inp['grup']).'.'.katalog_kode($inp['katalog']).'.';
+		$r['kode']=lokasi_kode($inp['lokasi']).'/'.grup_kode($inp['grup']).'/'.katalog_kode($inp['katalog']).'/';
 		$l=barang_lbarkode();
 		$r['kode'].=sprintf("%05d",$l);
 		$r['barkode']=sprintf("%05d",$l);

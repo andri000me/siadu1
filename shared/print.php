@@ -212,14 +212,13 @@ class doc {
 	}
 	function cell($a,$w=0,$al='',$c=1,$r=1,$b=-1,$bg='',$s='',$atr=''){
 		if($al=='')$al=$this->cellformat['align'];
-		if($b==-1)$bo=$this->cellformat['border'];
-		else $bo='';
+		if($b==-1)$b=$this->cellformat['border'];
 		if($bg=='')$bg=$this->cellformat['background'];
 		
 		if($b===1||$b===0){
 			$bo=$b==1?';border:'.DOCBORDER:'';
 		} else {
-			$b=strtolower($b);
+			$b=strtolower($b); $bo='';
 			if(strpos($b,"t")!==false) $bo.=';border-top:'.DOCBORDER;
 			if(strpos($b,"b")!==false) $bo.=';border-bottom:'.DOCBORDER;
 			if(strpos($b,"l")!==false) $bo.=';border-left:'.DOCBORDER;
@@ -254,7 +253,7 @@ class doc {
 	function cell_format($f){
 		$pat="/border:[01]/i";
 		if(preg_match($pat,$f,$mat)){
-			$this->cellformat['border']=substr($mat[0],strpos($mat[0],":")+1);
+			$this->cellformat['border']=intval(substr($mat[0],strpos($mat[0],":")+1));
 		}
 		$pat="/align:[clrj]/i";
 		if(preg_match($pat,$f,$mat)){

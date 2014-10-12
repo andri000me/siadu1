@@ -737,7 +737,7 @@ class xtable{
 		else {
 		echo '<div class="infobox2" style="margin-top:10px"><div style="float:left;margin-right:4px">Belum ada data '.$this->format_word($this->idata).($c==''?'':' '.$c).'.</div>';
 		if(admin_isoperator()){
-			//echo ' <div style="float:left">Silahkan <a class="linkb" href="javascript:" onclick="'.$this->act_add.'"> '.($b==''?'menambah data':$b).' '.$this->format_word($this->idata).'</a>.</div>';
+			echo ' <div style="float:left">Silahkan <a class="linkb" href="javascript:" onclick="'.$this->act_add.'"> '.($b==''?'menambah data':$b).' '.$this->format_word($this->idata).'</a>.</div>';
 		}
 		echo '</div>';
 		hiddenval('xtable'.$this->xtableid.'_usesearch',$this->usesearch);
@@ -788,11 +788,9 @@ class xtable{
 		echo '<button class="btn" style="float:left;margin-right:4px" onclick="'.$a.'"><div class="bi_pri">Cetak</div></button>';
 		}
 	}
-
 	function btnbar_help(){
 		echo '<button class="btn" title="Bantuan" style="float:left;margin-right:4px" onclick="'.$this->fmod.'_form(\'hf\')"><div class="bi_helpb">&nbsp;</div></button>';
 	}
-
 	
 	/*
 	btnbar_f( mixed $option )

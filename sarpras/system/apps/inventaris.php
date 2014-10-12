@@ -27,7 +27,7 @@ if($opt=='a'||$opt=='u'||$opt=='d'){ $q=false;
 	if($opt=='af' || $opt=='uf'){ require_once(MODDIR.'control.php'); // Add or Edit form
 		
 		$fform->fl('Lokasi','['.lokasi_kode($r['lokasi']).'] '.lokasi_name($r['lokasi']));
-		$fform->fi('Kode',iText('kode',$r['kode'],"width:60px"));
+		$fform->fi('Kode',iText('kode',$r['kode'],"width:80px"));
 		$fform->fi('Nama',iText('nama',$r['nama'],$fform->rwidths));
 		$fform->fa('Keterangan',iTextarea('keterangan',$r['keterangan'],$fform->rwidths,3));
 	

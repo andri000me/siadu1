@@ -19,7 +19,7 @@ function kelas_name($a){
 function kelas_warn($a=0,$f=''){
 	if(!admin_isoperator()) $a=1;
 	if($a==0){
-		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data kelas pada tingkat ini.';
+		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data kelas pada tingkat ini.<br/>Silahkan <a class="linkb" href="#&kelas" onclick="PCBCODE=105;openPage('.app_page_getindex('kelas').',\'kelas\',false,\'departemen=\'+E(\'departemen\').value+\'&tahunajaran=\'+E(\'tahunajaran\').value+\'&tingkat=\'+E(\'tingkat\').value)">membuat data kelas</a> pada menu Referensi.</div>';
 	}
 	else if($a==1){
 		echo '<div class="warnbox" style="'.$f.'">Tidak ditemukan data kelas pada tingkat ini.<br/>Silahkan menghubungi bagian akademik untuk membuat data kelas baru.</div>';

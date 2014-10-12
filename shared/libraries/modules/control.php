@@ -235,11 +235,12 @@ function iLookupval($id,$v='',$v1='',$act='',$ttl='Cari',$w='250px',$sv=1,$atr='
 	return $s;
 }
 
+// iBtn(label,[class],[attribute],[style])
 function iBtn($l,$c='',$a='',$s=-1){
 	if($s==-1){
 		if(defined(SFLOATL)) $s=SFLOATL;
 		else $s='float:left;margin-right:4px';
 	}
-	return '<button '.$a.' class="btn" style="'.$s.'">'.($c==''?$l:'<div class="'.$c.'">'.$l.'</div>').'</button>';
+	return '<button '.$a.' class="btn" style="'.$s.'">'.($c==''?$l:'<div class="'.$c.'">'.($l==''?'&nbsp':$l).'</div>').'</button>';
 }
 ?>

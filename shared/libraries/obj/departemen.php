@@ -23,7 +23,7 @@ function departemen_name($a){
 }
 function departemen_warn($a=0){
 	if($a==0){
-		echo '<div class="warnbox">Tidak ditemukan data departemen.';
+		echo '<div class="warnbox">Tidak ditemukan data departemen.<br/>Silahkan <a class="linkb" href="#&departemen" onclick="PCBCODE=\'dept_add\';openPage('.app_page_getindex('departemen').',\'departemen\',false)">membuat data departemen</a> pada menu Referensi.</div>';
 	}
 	else if($a==1){
 		echo '<div class="warnbox">Tidak ditemukan data departemen.<br/>Silahkan menghubungi bagian akademik untuk membuat data departemen baru.</div>';

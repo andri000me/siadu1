@@ -32,9 +32,9 @@ $xform->title($ttl.' data barang baru');
 $xform->table_begin();
 	$xform->col_begin('50%'); // Kolom kiri lebar 50%
 	$xform->group_begin('Informasi Barang'); // Grup field
-		$xform->fl('Lokasi','['.lokasi_kode($lok).'] '.lokasi_name($lok));
+		$xform->fl('Lokas ','['.lokasi_kode($lok).'] '.lokasi_name($lok));
 		$xform->fl('Grup barang','['.grup_kode($gru).'] '.grup_name($gru));
-		$xform->fi('Kode',iText('kode',$data,'width:50px'));
+		$xform->fi('Kode',iText('kode',$data,'width:70px'));
 		$xform->fi('Nama barang',iText('nama',$data,$xform->fieldws));
 		$xform->fi('Jenis',iSelect('jenis',$jenis,$data));
 		$xform->fi('Penyusutan',iText('susut',$data,'width:40px').'<l>&nbsp;% per tahun</l>');
